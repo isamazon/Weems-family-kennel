@@ -12,7 +12,18 @@ body{
 
 /* opening page. */
 
+.parallax {
+	 position: relative;
+	  background-image: url("../CSS/pics/huskywallpaper1.jpg");
+	  height: 100vh;
+	  background-attachment: fixed;
+	  background-position: center;
+	  background-repeat: no-repeat;
+	  background-size: cover;
+	  top: -25px;
+	  padding-bottom: 20px;
 
+}
 
 .header1 {
 	position: relative;
