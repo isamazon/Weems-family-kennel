@@ -1,3 +1,5 @@
+/* font-family: 'Teko', sans-serif; */
+
 * {
     margin: 0;
     padding: 0;
@@ -6,32 +8,35 @@
 }
 
 body{
-    background:#0b0c10;
+	font-size: 16px;
 }
 
 
 /* opening page. */
 
 .parallax {
-	 position: relative;
-	  background-image: url("../CSS/pics/huskywallpaper1.jpg");
-	  height: 100vh;
-	  background-attachment: fixed;
-	  background-position: center;
-	  background-repeat: no-repeat;
-	  background-size: cover;
-	  top: -25px;
-	  padding-bottom: 20px;
+	position: relative;
+	background-image: url("../CSS/pics/huskywallpaper1.jpg");
+	margin-top: -25px;
+	height: 100vh;
+	background-attachment: fixed;
+    background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+
 
 }
 
 .header1 {
+	font-family: 'Teko', sans-serif; 
 	position: relative;
-	top: 200px;
+	top: 300px;
 	text-align: center;
-	letter-spacing: 5px;
+	letter-spacing: 6px;
 	color: whitesmoke;
 	text-shadow: 2px 3px 3px black;
+	font-size: 5.25em;
 }
 
 
@@ -50,8 +55,7 @@ body{
 /* location text/info */
 
  div.location {
-    grid-template-columns: 100px 100px 100px;  
-    grid-template-rows: 50px 50px; 
+
 	position: relative;
 	background-color: #0b0c10;
 	height: 100%; 
@@ -69,6 +73,10 @@ body{
 	 color: white;
 	 font-family: 'Noto Sans', sans-serif;
 	 
+ }
+
+ .h1location p {
+	 font-family: 'Teko', sans-serif;
  }
 
 .h1location {

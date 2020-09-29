@@ -6,9 +6,11 @@
 }
 
 body{
-    background:#0b0c10;
+    font-size: 16px;
 }
-
+.puppybatch1 {
+    background-color: #1f2833;
+}
 
 .notice, .noticeRed {
     position: relative;
@@ -22,9 +24,16 @@ body{
     color: red;
 }
 
-.flexbox-container1 {
-    display: flexbox;
-    justify-content: center;
+.puppybatch1 {
+    position: relative;
+    margin-top: -100px;
+	background-image: url(../CSS/pics/pattern1.jpg);
+	height: 100%; 
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-bottom: 560px;
 }
 /* puppy 1 */
 .puppy1 {
