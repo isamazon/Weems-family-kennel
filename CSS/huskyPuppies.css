@@ -1,3 +1,6 @@
+/* font-family: 'Teko', sans-serif; */
+
+
 * {
     margin: 0;
     padding: 0;
@@ -23,6 +26,7 @@ body{
 .noticeRed {
     color: red;
 }
+
 
 .puppybatch1 {
     position: relative;
@@ -114,13 +118,20 @@ body{
     font-size: 35px;
     text-decoration: none;
     color: #fff;
-    box-shadow: 0 0 40px 40px #008000 inset, 0 0 0 0 #008000;
+    box-shadow: 0 0 40px 50px #008000 inset, 0 0 0 0 #008000;
     -webkit-transition: all 150ms ease-in-out;
     transition: all 150ms ease-in-out;
   }
   .btn1:hover {
-    box-shadow: 0 0 10px 0 #4AC948 inset, 0 0 10px 4px #4AC948;
+    box-shadow: 0 0 10px 20px #4AC948 inset, 0 0 10px 4px #4AC948;
   }
+#btn1 {
+    color: #fff;
+}
+#btn1:hover {
+    color: black;
+    transition-duration: 5.0s;
+}
 .card1:hover > .front1 {
     transform: perspective(600px) rotateY(-180deg);
 }

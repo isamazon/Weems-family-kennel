@@ -54,104 +54,44 @@ body{
 
 /* location text/info */
 
- div.location {
-
-	position: relative;
-	background-color: #0b0c10;
-	height: 100%; 
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	padding-bottom: 560px;
-
+ .info {
+	 background-color: #c5c6c7;
+	 height: 100%;
+	 padding-bottom: 200px;
  }
 
-
- div.h1location, .h1location, .locationlink, .locationP, .googlemaps, .locationP2 {
-	 max-width: 100%;
-	 color: white;
-	 font-family: 'Noto Sans', sans-serif;
-	 
+ /* where to find us */
+ .whereToFindUs {
+	position: relative;
+	padding-top: 200px;
+	padding-left: 400px;
+	
  }
-
- .h1location p {
-	 font-family: 'Teko', sans-serif;
+ .locationIcon {
+	position: relative;
+	padding-left: 165px;
+	width: 100px;
+	height: 100px;
  }
-
-.h1location {
+ .Location {
 	position: relative;
-	left: -150px;
-	top: 50px;
-	padding-top: 50px;
-	padding-bottom: 50px;
-	text-align: center;
-	color: white;
-	letter-spacing: 4px;
-	
-}
-
-.locationlink {
-	position: relative;
-	
-	background:
-	linear-gradient(
-	  to right,
-	  var(--mainColor) 0%,
-	  var(--mainColor) 5px,
-	  transparent 5px
-	);
-   background-repeat: repeat-x;
-   background-size: 100%;
-   color: white;
-   padding-left: 15px;
-
-   text-decoration: none;
-   letter-spacing: 15px;
-}
-
-.locationlink:hover {
-	background:
-	linear-gradient(
-	  to right,
-	  var(--mainColor) 0%,
-	  var(--mainColor) 5px,
-	  transparent
-	);
-	}
-
-.locationP {
-
-	position: relative;
-	background-color: #0b0c10;
-	background-repeat: no-repeat;
-	background-size: 100px 100px 200px 200px;
-	font-size: 20px;
-	text-align: center;
-	padding: 10px 10px;
-	left: 160px;
-	width: 40%;
-	letter-spacing: 2.5px;
-	border: 2px solid white;
-	overflow-wrap: break-word;
-	
-}
-
-.locationP2 {
-	position: sticky;
-	height: 170px;
-	font-size: 20px;
-	text-align: center;
-	
-	padding-left: 750px;
-	letter-spacing: 2.5px;
-}
-
-
-.p2 {
-	font-size: 30px;
-}
-
+	padding-left: 10px;
+	letter-spacing: 30px;
+	font-size:3.0em;
+ }
+ .directions {
+	 font-size: 1.20em;
+	 text-align: center;
+	 max-width: ;width: 400px;
+	 max-height: 400px;
+	 padding: 30px 15px 30px 15px;
+	 border: 5px solid white;
+	 background-color: black;
+	 color: #c5c6c7;
+	 text-align: center;
+	 line-height: 40px;
+	 overflow-y: scroll;
+ }
 
 
 
