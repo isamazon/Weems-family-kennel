@@ -30,7 +30,12 @@ header {
 	letter-spacing: 6px;
 	
 }
-
+#weemsLogo {
+	color: white;
+}
+#weemsLogo:hover {
+	color: black;
+}
 nav {
 	position: fixed;
 	width: 100%;

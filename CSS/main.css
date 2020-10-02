@@ -18,7 +18,7 @@
 }
 ::-webkit-scrollbar-thumb:hover {
 	background: rgb(0,0,0);
-background: linear-gradient(106deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 49%, rgba(0,255,231,1) 98%);
+	background: linear-gradient(106deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 49%, rgba(0,255,231,1) 98%);
 	-webkit-scrollbar-duration: 3.3s;
 }
 
@@ -54,7 +54,25 @@ body{
 	text-shadow: 2px 3px 3px black;
 	font-size: 5.25em;
 }
-
+.infoButton {
+	position: relative;
+	font-size: 2.0em;
+	letter-spacing: 2px;
+	max-width: 100px;
+	left: 650px;
+	top: 280px;
+}
+@media only screen and (max-width: 480px) {
+	.header1 {
+		font-size: 3.0em;
+	}
+	.infoButton {
+		position: relative;
+		top: 270px;
+		font-size: 1.25em;
+		left: 120px;
+	}
+}
 
 
 
@@ -168,4 +186,9 @@ body{
 	background-color: #2c828b;
 	transition-duration: 3s;
 }
-
+.phoneNum {
+	color: white;
+}
+.phoneNum:hover {
+	color: rgba(0,244,241,1);
+}
