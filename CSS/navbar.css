@@ -55,6 +55,7 @@ nav ul {
 	margin: 0;
 	padding-right: 10px;
 	transition: 1s;
+	
 }
 nav.black ul {
 		background: #000;
@@ -97,7 +98,7 @@ nav ul li a:hover {
 }
 
 
-@media(max-width: 768px) {
+@media(max-width: 1510px) {
 	.logo {
 		position: fixed;
 		top: 0;

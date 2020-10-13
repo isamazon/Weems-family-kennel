@@ -9,17 +9,23 @@
 
 
 ::-webkit-scrollbar {
-	width: 15px;
+	width: 20px;
+	height: 30px;
 
 }
 ::-webkit-scrollbar-thumb {
 	background: linear-gradient(106deg, rgba(0,244,241,1) 0%, rgba(59,234,236,1) 22%, rgba(16,135,145,1) 42%, rgba(0,0,0,1) 98%);
 	border-radius: 6px;
+	box-shadow: inset 2px 2px 2px hsla(0,0%,100%,.25), inset -2px -2px 2px rgba(0,0,0,.25);
 }
 ::-webkit-scrollbar-thumb:hover {
 	background: rgb(0,0,0);
 	background: linear-gradient(106deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 49%, rgba(0,255,231,1) 98%);
 	-webkit-scrollbar-duration: 3.3s;
+	box-shadow: inset 2px 2px 2px hsla(0,0%,100%,.25), inset -2px -2px 2px rgba(0,0,0,.25);
+}
+::-webkit-scrollbar-track {
+    background: linear-gradient(90deg,#201c29,#201c29 1px,#100e17 0,#100e17);
 }
 
 
@@ -48,30 +54,29 @@ body{
 	font-family: 'Teko', sans-serif; 
 	position: relative;
 	top: 300px;
-	text-align: center;
+	left: 50px;
+	width:  700px;
 	letter-spacing: 6px;
 	color: whitesmoke;
 	text-shadow: 2px 3px 3px black;
 	font-size: 5.25em;
 }
+
 .infoButton {
 	position: relative;
 	font-size: 2.0em;
 	letter-spacing: 2px;
-	max-width: 100px;
-	left: 650px;
+	left: 250px;
 	top: 280px;
+	color: white;
+	background-color: black;
+	letter-spacing: 5px;
+	padding: 5px 10px 5px 10px;
+	border: solid 1px white;
 }
-@media only screen and (max-width: 480px) {
-	.header1 {
-		font-size: 3.0em;
-	}
-	.infoButton {
-		position: relative;
-		top: 270px;
-		font-size: 1.25em;
-		left: 120px;
-	}
+.infoButton:hover {
+	color: black;
+	background-color: white;
 }
 
 
@@ -90,21 +95,32 @@ body{
 .importantRed {
 	color: red;
 }
+.infoSection {
+	height: 100%;
+	padding-top: 100px;
+	background-color: #1f2833;
+
+	
+}
  .info {
-	padding-top: 250px;
-	height: 100vh;
-	background-color: white;
+	height: 100%;
+	width: 100%;
+	padding-top: 50px;
+	padding-bottom: 400px;
+	background-color: rgb(0, 171, 238);
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
+	align-items: center;
+	justify-content: space-around;
+
  }
 
  /* where to find us */
- .whereToFindUs {
-	position: relative;
-	right: 400px;
-	
- }
+.infoBox {
+	height: 350px;
+	width: 450px;
+	flex-shrink: 3;
+}
  .locationIcon {
 	position: relative;
 	padding-left: 165px;
@@ -143,52 +159,53 @@ body{
 	transition-duration: 3s;
 }
 
-/* Contact us */
-.callInfo {
-	position: relative;
-	right: 200px;
 
-}
-.phoneIcon {
+/* Call info*/
+.callIcon {
 	position: relative;
+	padding-left: 165px;
 	width: 100px;
 	height: 100px;
-	left: 165px;
+	padding-bottom: 10px;
 }
-.contactUs {
+.callInfoH1 {
 	position: relative;
-	left: 20px;
-	letter-spacing: 20px;
-	font-size:3.0em;
+	padding-left: 15px;
+	letter-spacing: 30px;
+	font-size:2.5em;
 }
-.contactUsInfo {
-	font-size: 1.20em;
-	text-align: center;
-	max-width: 400px;
-	max-height: 400px;
-	padding: 30px 15px 30px 15px;
-	border: 5px solid white;
-	background-color: black;
-	color: #c5c6c7;
-	text-align: center;
-	line-height: 40px;
-	overflow-y: scroll;
+
+
+
+
+
+
+@media (max-width: 1780px) {
+	.infoBox {
+	height: 800px;
+	width: 450px;
+	}
+	.infoSection {
+		height: 100%;
+	}
 }
-.contactUsInfo::-webkit-scrollbar {
-	width: 20px;
-	height: 0px;
+
+@media only screen and (max-width: 985px)  {
+
+	.infoButton {
+		width: 100%;
+		position: relative;
+		top: 280px;
+		font-size: 1.25em;
+		left: 180px;
+	}
+	
 }
-.contactUsInfo::-webkit-scrollbar-thumb {
-	background-color: linear-gradient(106deg, rgba(255,255,255,1) 0%, rgba(137,137,137,1) 35%, rgba(0,0,0,1) 55%);
-	border-radius: 6px;
-}
-.contactUsInfo::-webkit-scrollbar-thumb:hover {
-	background-color: #2c828b;
-	transition-duration: 3s;
-}
-.phoneNum {
-	color: white;
-}
-.phoneNum:hover {
-	color: rgba(0,244,241,1);
+
+
+@media only screen and (max-width: 750px) {
+	.header1 {
+		font-size: 3.5em;
+		max-width: 90%;
+	}
 }
