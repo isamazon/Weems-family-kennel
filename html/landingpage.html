@@ -29,6 +29,12 @@
     </div>
 
     <div class="page2">
+      <div class="scrollup-btn">
+        <button type="button" id="scrollUp">^</button>
+      </div>
+      <div class="scrolldown-btn">
+        <button type="button" id="scrollDown">^</button>
+      </div>
       <div class="page2-outline" data-aos="fade-up">
         <div class="recipe-content-container">
           <div class="recipe-h1-container">
@@ -60,14 +66,14 @@
               >
             </p>
           </div>
-          <div class="recipe-footer-container">
+          <div class="recipe-footer-container" data-aos="fade-down">
             <p class="recipe-footer">
               A study of the core vaccine including parvo, distemperand
               adenovirus show results of effectiveness of the parvo vaccine when
-              givenonce at these specific ages: <br />
-              6 weeks of age= 52% effective <br />
-              9weeks of age= 88% effective <br />
-              12 weeks of age=100% effictive <br />
+              given once at these specific ages: <br />
+              <b> 6 weeks of age= 52% effective</b> <br />
+              <b>9weeks of age= 88% effective</b> <br />
+              <b> 12 weeks of age=100% effictive</b> <br />
             </p>
           </div>
         </div>
@@ -78,12 +84,18 @@
               Ingredients for recipe!
             </h1>
           </div>
-          <div class="recipe-second-imageslider" id="slider">
+          <!--Image slider start-->
+          <div class="slider">
             <div class="slides">
-              <img src="../CSS/pics/recipe-img.jpg" alt="" class="image" />
-              <div class="slides-p-container">
-                <p class="slides-p">something something something something</p>
-              </div>
+              <!--Radio buttons start-->
+              <input type="radio" name="radio-btn" id="radio1" />
+              <input type="radio" name="radio-btn" id="radio2" />
+              <input type="radio" name="radio-btn" id="radio3" />
+              <input type="radio" name="radio-btn" id="radio4" />
+              <input type="radio" name="radio-btn" id="radio5" />
+              <!--Radio buttons end-->
+              <!--Slide imaghes start-->
+              div
             </div>
           </div>
         </div>
@@ -93,7 +105,7 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init({
-        offset: 300,
+        offset: 200,
         duration: 1000,
       });
     </script>

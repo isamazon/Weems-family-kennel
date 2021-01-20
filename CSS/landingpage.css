@@ -42,21 +42,25 @@ html {
   margin-right: 10px;
 }
 .firsth1 {
+  width: 100%;
   letter-spacing: 10px;
   padding: 0px 10px;
   animation: slideIn_right 1s ease;
 }
 .secondh1 {
+  width: 100%;
   letter-spacing: 10px;
   padding: 0px 10px;
   animation: slideIn_left 1.5s ease;
 }
 .thirdh1 {
+  width: 100%;
   letter-spacing: 10px;
   padding: 0px 10px;
   animation: slideIn_right 2s ease;
 }
 .fourthh1 {
+  width: 100%;
   letter-spacing: 10px;
   padding: 0px 10px;
   animation: slideIn_left 2.5s ease;
@@ -86,6 +90,7 @@ button {
 }
 #recipebtn {
   margin: 0px 0px;
+
   animation: grow 3s ease-in;
 }
 #locationbtn {
@@ -178,7 +183,29 @@ button:hover:after {
   justify-content: center;
   background-color: #ffffff;
   height: 100vh;
-  padding: 50px 0px;
+  padding: 100px 0px;
+}
+.scrollup-btn {
+  position: absolute;
+  top: 1%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 5%;
+}
+#scrollUp {
+  color: rgb(0, 0, 0);
+  font-size: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+#scrollUp:hover {
+  color: black;
+  background-color: white;
 }
 .page2-outline {
   position: relative;
@@ -211,7 +238,6 @@ button:hover:after {
   align-items: center;
   background-color: white;
   height: 10%;
-  border: solid 2px black;
   width: 100%;
 }
 .recipe-h1 {
@@ -227,7 +253,8 @@ button:hover:after {
   flex-direction: column;
   top: 15%;
   overflow-y: scroll;
-  border: 3px solid black;
+  border-radius: 10px;
+  box-shadow: 10px 10px 50px rgb(0, 0, 0);
   background-color: white;
   width: 90%;
   height: 60%;
@@ -253,6 +280,27 @@ button:hover:after {
   text-align: center;
   font-size: 20px;
 }
+.recipe-footer-container {
+  position: absolute;
+  top: 80%;
+  width: 90%;
+  height: 15%;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  justify-content: center;
+
+  background-color: white;
+  overflow-y: scroll;
+  box-shadow: 10px 10px 50px rgb(0, 0, 0);
+}
+.recipe-footer {
+  padding: 10px 50px;
+  letter-spacing: 2px;
+  padding: 30px 0px;
+  text-align: center;
+  font-size: 15px;
+}
 /*                    RECIPE 2 CONTAINER                    */
 .recipe-second-container {
   position: absolute;
@@ -270,7 +318,6 @@ button:hover:after {
   align-items: center;
   background-color: white;
   height: 10%;
-  border: solid 2px black;
   width: 100%;
 }
 .recipe-second-h1 {
@@ -279,23 +326,24 @@ button:hover:after {
   letter-spacing: 3px;
   text-decoration: underline;
 }
-.recipe-second-imageslider {
+/*          SLIDER CONTAINER            */
+.slider {
+  position: absolute;
+  top: 20%;
+  display: flex;
+  width: 90%;
+  height: 70%;
+  background-color: white;
+}
+.slides {
   position: absolute;
   display: flex;
   justify-content: center;
-  align-self: center;
   align-items: center;
+  align-self: flex-end;
   width: 100%;
-  height: 80%;
-  background-color: rgb(0, 255, 64);
-}
-.slides {
-  display: flex;
-  flex-direction: column;
-  background-color: white;
-}
-.image {
-  height: 300px;
+  height: 10%;
+  background-color: red;
 }
 /*                    PAGE 3                    */
 .page3 {
@@ -384,5 +432,62 @@ button:hover:after {
 @media screen and (max-width: 1450px) {
   .buttons {
     left: 20%;
+  }
+}
+@media screen and (max-width: 950px) {
+  .recipe-h1,
+  .recipe-second-h1 {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .welcome-h1s-container {
+    width: 100%;
+    justify-content: center;
+  }
+  .welcome-h1s {
+    width: 100%;
+    left: 0%;
+    top: 5%;
+    justify-content: center;
+    text-align: center;
+  }
+  .firsth1,
+  .secondh1,
+  .thirdh1,
+  .fourthh1 {
+    font-size: 5rem;
+  }
+  .buttons-container {
+    width: 100%;
+    left: 0%;
+    justify-content: center;
+  }
+  .buttons {
+    top: 50%;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    left: 0%;
+  }
+  .page2-outline {
+    position: relative;
+    height: 100%;
+    width: 95%;
+  }
+  .recipe-h1,
+  .recipe-second-h1 {
+    font-size: 2.5rem;
+  }
+  .recipe-content-container,
+  .recipe-second-container {
+    height: 90%;
+    width: 100%;
+    left: 0%;
+    align-self: center;
+  }
+  .recipe-second-container {
+    top: 100%;
   }
 }
