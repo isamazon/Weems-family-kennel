@@ -4,6 +4,7 @@
 const landingPage = {
   page1: document.querySelector(".page1"),
   page2: document.querySelector(".page2"),
+  page3: document.querySelector(".page3"),
   recipeBtn: document.getElementById("recipebtn"),
   locationBtn: document.getElementById("locationbtn"),
   guranteeBtn: document.getElementById("guranteebtn"),
@@ -12,12 +13,21 @@ const landingPage = {
   scrollDown1: document.getElementById("scrollDown"),
 };
 
-// Create an onclick function for the Recipe button to scroll to page2
+// On Click functions for all the page1 buttons
+// Scroll into view recipe
 landingPage.recipeBtn.addEventListener("click", () => {
   landingPage.page2.scrollIntoView({ behavior: "smooth", block: "center" });
+});
+// Scroll into view location
+landingPage.locationBtn.addEventListener("click", () => {
+  landingPage.page3.scrollIntoView({ behavior: "smooth", block: "center" });
 });
 
 // Create a onclick function to scroll up and below page2
 landingPage.scrollUp1.addEventListener("click", () => {
   landingPage.page1.scrollIntoView({ behavior: "smooth", block: "center" });
+});
+// Scroll down to page 3 function
+landingPage.scrollDown1.addEventListener("click", () => {
+  landingPage.page3.scrollIntoView({ behavior: "smooth", block: "center" });
 });

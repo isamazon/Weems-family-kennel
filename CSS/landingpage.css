@@ -14,6 +14,7 @@ html {
 /*                    Welcome page                    */
 .page1 {
   position: relative;
+  display: flex;
   height: 100vh;
   width: 100%;
 }
@@ -67,22 +68,23 @@ html {
 }
 /*                  Buttons                  */
 .buttons-container {
-  position: absolute;
+  position: relative;
   display: flex;
+  z-index: 1;
   flex-direction: column;
-  justify-content: center;
-  top: 0%;
-  left: 10%;
+  align-items: center;
   height: 100%;
-  width: 50%;
+  margin: 0px 20px;
+  background-color: rgba(255, 255, 255, 0.233);
+  width: 30%;
 }
 .buttons {
   display: flex;
+  justify-content: center;
   position: absolute;
   flex-direction: column;
-  top: 38%;
-  left: 30%;
-  transform: translate(-50%, -50%);
+  top: 35%;
+  width: 100%;
 }
 button {
   position: absolute;
@@ -90,7 +92,7 @@ button {
 }
 #recipebtn {
   margin: 0px 0px;
-
+  top: 0px;
   animation: grow 3s ease-in;
 }
 #locationbtn {
@@ -181,7 +183,7 @@ button:hover:after {
   position: relative;
   display: flex;
   justify-content: center;
-  background-color: #ffffff;
+  background-color: #0d1117;
   height: 100vh;
   padding: 100px 0px;
 }
@@ -190,20 +192,51 @@ button:hover:after {
   top: 1%;
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 100%;
   height: 5%;
 }
 #scrollUp {
-  color: rgb(0, 0, 0);
+  position: absolute;
+  color: rgb(255, 255, 255);
   font-size: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 50%;
   width: 50px;
   height: 50px;
+  padding-top: 14px;
+  border: none;
+  border-radius: 50%;
 }
 #scrollUp:hover {
+  color: black;
+  background-color: white;
+}
+.scrolldown-btn {
+  position: absolute;
+  bottom: 1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 5%;
+  transform: rotate(180deg);
+}
+#scrollDown {
+  position: absolute;
+  color: rgb(255, 255, 255);
+  font-size: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  padding-top: 14px;
+  border: none;
+  border-radius: 50%;
+}
+#scrollDown:hover {
   color: black;
   background-color: white;
 }
@@ -212,11 +245,11 @@ button:hover:after {
   display: flex;
   flex-direction: row;
   align-items: center;
-  border-radius: 30px;
+  border-radius: 0px;
   width: 95%;
   height: 100%;
-  background-color: black;
-  box-shadow: 10px 10px 5px rgb(109, 109, 109);
+  background-color: white;
+  box-shadow: 10px 10px 50px rgb(109, 109, 109);
   background-position: center;
   background-size: cover;
 }
@@ -229,14 +262,13 @@ button:hover:after {
   height: 90%;
   width: 50%;
   left: 50%;
-  background-color: red;
 }
 .recipe-h1-container {
   position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
+
   height: 10%;
   width: 100%;
 }
@@ -245,7 +277,6 @@ button:hover:after {
   font-size: 4rem;
   text-shadow: 5px 5px 10px rgb(109, 108, 108);
   letter-spacing: 3px;
-  text-decoration: underline;
 }
 .recipe-p-container {
   position: absolute;
@@ -255,7 +286,7 @@ button:hover:after {
   overflow-y: scroll;
   border-radius: 10px;
   box-shadow: 10px 10px 50px rgb(0, 0, 0);
-  background-color: white;
+
   width: 90%;
   height: 60%;
 }
@@ -290,7 +321,6 @@ button:hover:after {
   border-radius: 10px;
   justify-content: center;
 
-  background-color: white;
   overflow-y: scroll;
   box-shadow: 10px 10px 50px rgb(0, 0, 0);
 }
@@ -308,7 +338,6 @@ button:hover:after {
   justify-content: center;
   height: 90%;
   width: 50%;
-  background-color: grey;
 }
 .recipe-second-h1-container {
   position: absolute;
@@ -316,7 +345,7 @@ button:hover:after {
   justify-content: center;
   align-self: flex-start;
   align-items: center;
-  background-color: white;
+  top: 5%;
   height: 10%;
   width: 100%;
 }
@@ -324,7 +353,6 @@ button:hover:after {
   font-size: 4rem;
   text-shadow: 5px 5px 10px rgb(109, 108, 108);
   letter-spacing: 3px;
-  text-decoration: underline;
 }
 
 /*                    PAGE 3                    */
@@ -333,7 +361,7 @@ button:hover:after {
   top: 0%;
   display: flex;
   justify-content: center;
-  background-color: #271f1c;
+  background-color: #0d1117;
   height: 100vh;
   padding-top: 50px;
 }
@@ -344,7 +372,7 @@ button:hover:after {
   justify-content: center;
   width: 90%;
   height: 100%;
-  background-color: #162635;
+
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -453,14 +481,25 @@ button:hover:after {
     justify-content: center;
     left: 0%;
   }
+  .page2 {
+    height: 100vh;
+    background-color: white;
+  }
+  .recipe-footer {
+    padding-top: 50px;
+  }
   .page2-outline {
     position: relative;
+    box-shadow: none;
     height: 100%;
     width: 95%;
   }
   .recipe-h1,
   .recipe-second-h1 {
     font-size: 2.5rem;
+  }
+  .recipe-second-h1-container {
+    padding-bottom: 50px;
   }
   .recipe-content-container,
   .recipe-second-container {
@@ -486,11 +525,12 @@ button:hover:after {
     height: 100%;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 800px) {
   #videoBG {
     display: none;
   }
   .page1 {
     background: url("../CSS/pics/huskywallpaper1.jpg");
+    background-size: cover;
   }
 }

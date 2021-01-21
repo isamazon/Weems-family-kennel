@@ -1,8 +1,12 @@
+"use strict";
+
+//create variables for the slide and the btns to change the slide
 var slides = document.querySelectorAll(".slide");
 var btns = document.querySelectorAll(".btn");
+// Adding a value to the variable current slide
 let currentSlide = 1;
 
-// Javascript for image slider manual navigation
+// creating the function for the manual nav
 var manualNav = function (manual) {
   slides.forEach((slide) => {
     slide.classList.remove("active");
