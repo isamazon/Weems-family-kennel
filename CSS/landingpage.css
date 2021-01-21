@@ -14,13 +14,13 @@ html {
 /*                    Welcome page                    */
 .page1 {
   position: relative;
-  background-image: url("../CSS/pics/huskywallpaper1.jpg");
   height: 100vh;
   width: 100%;
-  background-attachment: scroll;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+}
+#videoBG {
+  position: fixed;
+  height: auto;
+  width: 100%;
 }
 
 /*                  H1s                  */
@@ -326,25 +326,7 @@ button:hover:after {
   letter-spacing: 3px;
   text-decoration: underline;
 }
-/*          SLIDER CONTAINER            */
-.slider {
-  position: absolute;
-  top: 20%;
-  display: flex;
-  width: 90%;
-  height: 70%;
-  background-color: white;
-}
-.slides {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-self: flex-end;
-  width: 100%;
-  height: 10%;
-  background-color: red;
-}
+
 /*                    PAGE 3                    */
 .page3 {
   position: relative;
@@ -489,5 +471,26 @@ button:hover:after {
   }
   .recipe-second-container {
     top: 100%;
+  }
+}
+/*            VIDEO BACKGROUND MEDIA QUERIES           */
+@media (min-aspect-ratio: 16/9) {
+  #videoBG {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  #videoBG {
+    width: auto;
+    height: 100%;
+  }
+}
+@media (max-width: 767px) {
+  #videoBG {
+    display: none;
+  }
+  .page1 {
+    background: url("../CSS/pics/huskywallpaper1.jpg");
   }
 }
