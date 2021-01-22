@@ -11,6 +11,10 @@ html {
   font-family: "Oswald", sans-serif;
 }
 
+body {
+  position: relative;
+}
+
 /*                    Welcome page                    */
 .page1 {
   position: relative;
@@ -70,45 +74,40 @@ html {
 .buttons-container {
   position: relative;
   display: flex;
-  z-index: 1;
   flex-direction: column;
   align-items: center;
   height: 100%;
-  margin: 0px 20px;
-  background-color: rgba(255, 255, 255, 0.233);
   width: 30%;
 }
 .buttons {
-  display: flex;
-  justify-content: center;
   position: absolute;
-  flex-direction: column;
-  top: 35%;
+  display: flex;
+  flex-direction: row;
+  top: 40%;
   width: 100%;
+  height: 50%;
 }
 button {
   position: absolute;
-  transform: translate(-50, -50);
+}
+.page1-button {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: grow 3s ease-in;
 }
 #recipebtn {
-  margin: 0px 0px;
   top: 0px;
-  animation: grow 3s ease-in;
 }
 #locationbtn {
-  position: absolute;
   top: 100px;
-  animation: grow 3s ease-in;
 }
 #guranteebtn {
-  position: absolute;
   top: 200px;
-  animation: grow 3s ease-in;
 }
 #contactbtn {
-  position: absolute;
   top: 300px;
-  animation: grow 3s ease-in;
 }
 #recipebtn,
 #locationbtn,
@@ -117,6 +116,14 @@ button {
   font-size: 24px;
   font-weight: 300;
   letter-spacing: 4px;
+}
+#recipebtn:hover,
+#locationbtn:hover,
+#guranteebtn:hover,
+#contactbtn:hover {
+  background-color: white;
+  color: #000000;
+  transition-duration: 1s;
 }
 button {
   background: none;
@@ -128,56 +135,9 @@ button {
   border-radius: 4px;
   transition: 0.6s;
   overflow: hidden;
-}
-
-button:focus {
-  outline: none;
-}
-
-button:before {
-  content: "";
-  display: block;
-  position: absolute;
-  background: rgba(255, 255, 255, 0.5);
-  width: 60px;
-  height: 100%;
-  left: 0;
-  top: 0;
-  opacity: 0.5;
-  filter: blur(10px);
-  transform: translateX(-130px) skewX(-15deg);
-}
-
-button:after {
-  content: "";
-  display: block;
-  position: absolute;
-  background: rgba(255, 255, 255, 0.2);
-  width: 30px;
-  height: 100%;
-  left: 30px;
-  top: 0;
-  opacity: 0;
-  filter: blur(30px);
-  transform: translateX(-100px) scaleX(-15deg);
-}
-
-button:hover {
-  background: #241f1f;
   cursor: pointer;
 }
 
-button:hover:before {
-  transform: translateX(300px) skewX(-15deg);
-  opacity: 0.6;
-  transition: 1s;
-}
-
-button:hover:after {
-  transform: translateX(300px) skewX(-15deg);
-  opacity: 1;
-  transition: 1.7s;
-}
 /*                     Page 2                    */
 .page2 {
   position: relative;
@@ -196,9 +156,10 @@ button:hover:after {
   width: 100%;
   height: 5%;
 }
-#scrollUp {
+#scrollUp,
+#scrollDown {
   position: absolute;
-  color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255, 0.2);
   font-size: 5rem;
   display: flex;
   justify-content: center;
@@ -209,9 +170,9 @@ button:hover:after {
   border: none;
   border-radius: 50%;
 }
-#scrollUp:hover {
-  color: black;
-  background-color: white;
+#scrollUp:hover,
+#scrollDown:hover {
+  color: rgb(255, 255, 255);
 }
 .scrolldown-btn {
   position: absolute;
@@ -223,23 +184,7 @@ button:hover:after {
   height: 5%;
   transform: rotate(180deg);
 }
-#scrollDown {
-  position: absolute;
-  color: rgb(255, 255, 255);
-  font-size: 5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50px;
-  height: 50px;
-  padding-top: 14px;
-  border: none;
-  border-radius: 50%;
-}
-#scrollDown:hover {
-  color: black;
-  background-color: white;
-}
+
 .page2-outline {
   position: relative;
   display: flex;
@@ -286,7 +231,6 @@ button:hover:after {
   overflow-y: scroll;
   border-radius: 10px;
   box-shadow: 10px 10px 50px rgb(0, 0, 0);
-
   width: 90%;
   height: 60%;
 }
@@ -333,7 +277,7 @@ button:hover:after {
 }
 /*                    RECIPE 2 CONTAINER                    */
 .recipe-second-container {
-  position: absolute;
+  position: relative;
   display: flex;
   justify-content: center;
   height: 90%;
@@ -358,31 +302,124 @@ button:hover:after {
 /*                    PAGE 3                    */
 .page3 {
   position: relative;
-  top: 0%;
   display: flex;
   justify-content: center;
   background-color: #0d1117;
   height: 100vh;
-  padding-top: 50px;
+  padding: 100px 0px;
 }
-.page3-outline {
+.scrollup-btn2 {
   position: absolute;
-  top: 0%;
+  top: 1%;
   display: flex;
   justify-content: center;
-  width: 90%;
+  align-items: center;
+  width: 100%;
+  height: 5%;
+}
+#scrollUp2,
+#scrollDown2 {
+  position: absolute;
+  color: rgb(255, 255, 255, 0.2);
+  font-size: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  padding-top: 14px;
+  border: none;
+  border-radius: 50%;
+}
+#scrollUp2:hover,
+#scrollDown2:hover {
+  color: rgb(255, 255, 255);
+}
+.scrolldown-btn2 {
+  position: absolute;
+  bottom: 1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 5%;
+  transform: rotate(180deg);
+}
+.page3-outline {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
   height: 100%;
+  background-color: white;
+}
+.location-info-container {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  width: 50%;
+  background-color: red;
+}
+.directions {
+  position: absolute;
+  top: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  height: 65%;
+  background-color: grey;
+}
+.directions:hover {
+  border-radius: 10px;
+  box-shadow: 10px 10px 50px black;
+}
+.directions-h1 {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+  height: 20%;
+  top: 0%;
+  text-align: center;
+  font-weight: 400;
 
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
+  letter-spacing: 5px;
+  background-color: white;
+}
+.directions-p {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 80%;
+  top: 20%;
+  padding: 20px 50px;
+  text-align: center;
+  font-size: 2rem;
+  overflow-y: scroll;
+  color: white;
+  line-height: 45px;
+  background-color: rgb(11, 12, 24);
+}
+/*          GOOGLE MAP SECTION           */
+.google-map-container {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+  width: 50%;
+  background-color: black;
 }
 
 /*                  SCROLL BAR                   */
 /* width */
 ::-webkit-scrollbar {
-  width: 10px;
-  border-radius: 20px;
+  width: 15px;
 }
 
 /* Track */
@@ -392,12 +429,13 @@ button:hover:after {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgb(70, 70, 70);
+  background: rgb(255, 255, 255);
+  border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgb(255, 255, 255);
+  background: rgb(0, 255, 255);
 }
 /*                  ANIMATIONS                   */
 @keyframes slideIn_right {
@@ -445,6 +483,10 @@ button:hover:after {
   }
 }
 @media screen and (max-width: 950px) {
+  .page1 {
+    background: url("../CSS/pics/huskywallpaper1.jpg") no-repeat fixed center;
+    background-size: cover;
+  }
   .recipe-h1,
   .recipe-second-h1 {
     font-size: 3rem;
@@ -454,6 +496,8 @@ button:hover:after {
 @media screen and (max-width: 800px) {
   .welcome-h1s-container {
     width: 100%;
+    height: 50%;
+    left: 50%;
     justify-content: center;
   }
   .welcome-h1s {
@@ -471,6 +515,7 @@ button:hover:after {
   }
   .buttons-container {
     width: 100%;
+    margin: 0;
     left: 0%;
     justify-content: center;
   }
@@ -511,6 +556,14 @@ button:hover:after {
   .recipe-second-container {
     top: 100%;
   }
+  .page3-outline {
+    flex-direction: column;
+  }
+  .location-info-container,
+  .google-map-container {
+    height: 50%;
+    width: 100%;
+  }
 }
 /*            VIDEO BACKGROUND MEDIA QUERIES           */
 @media (min-aspect-ratio: 16/9) {
@@ -525,12 +578,12 @@ button:hover:after {
     height: 100%;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   #videoBG {
     display: none;
   }
   .page1 {
-    background: url("../CSS/pics/huskywallpaper1.jpg");
+    background: url("../CSS/pics/huskywallpaper1.jpg") no-repeat fixed center;
     background-size: cover;
   }
 }

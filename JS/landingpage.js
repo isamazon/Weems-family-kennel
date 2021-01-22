@@ -11,6 +11,8 @@ const landingPage = {
   contactBtn: document.getElementById("contactbtn"),
   scrollUp1: document.getElementById("scrollUp"),
   scrollDown1: document.getElementById("scrollDown"),
+  scrollUp2: document.getElementById("scrollUp2"),
+  scrollDown2: document.getElementById("scrollDown2"),
 };
 
 // On Click functions for all the page1 buttons
@@ -30,4 +32,10 @@ landingPage.scrollUp1.addEventListener("click", () => {
 // Scroll down to page 3 function
 landingPage.scrollDown1.addEventListener("click", () => {
   landingPage.page3.scrollIntoView({ behavior: "smooth", block: "center" });
+});
+
+// Create a onclick function to scroll up and below page3
+// Scroll up button to page 2
+landingPage.scrollUp2.addEventListener("click", () => {
+  landingPage.page2.scrollIntoView({ behavior: "smooth", block: "center" });
 });
