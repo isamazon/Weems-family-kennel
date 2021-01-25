@@ -10,9 +10,9 @@ window.addEventListener("scroll", function () {
 });
 
 menuBtn.addEventListener("click", () => {
-  menu.classList.add("active");
+  menu.classList.add("active1");
 });
 
 closeBtn.addEventListener("click", () => {
-  menu.classList.remove("active");
+  menu.classList.remove("active1");
 });

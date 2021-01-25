@@ -1,13 +1,12 @@
-"use strict";
-
 //create variables for the slide and the btns to change the slide
 var slides = document.querySelectorAll(".slide");
 var btns = document.querySelectorAll(".btn");
-// Adding a value to the variable current slide
+// Creating new var called current slide to determine which slide we are on
 let currentSlide = 1;
 
-// creating the function for the manual nav
+// creating the function for the manual nav With the parameter of manual
 var manualNav = function (manual) {
+  // Using the var slides and creating a new param called slide
   slides.forEach((slide) => {
     slide.classList.remove("active");
 
@@ -49,7 +48,7 @@ var repeat = function (activeClass) {
         return;
       }
       repeater();
-    }, 10000);
+    }, 5000);
   };
   repeater();
 };

@@ -13,9 +13,15 @@ const landingPage = {
   scrollDown1: document.getElementById("scrollDown"),
   scrollUp2: document.getElementById("scrollUp2"),
   scrollDown2: document.getElementById("scrollDown2"),
+  scrollHome: document.getElementById("home-btn"),
 };
 
 // On Click functions for all the page1 buttons
+//Scroll back to home page
+landingPage.scrollHome.addEventListener("click", () => {
+  console.log("works");
+  landingPage.page1.scrollIntoView({ behavior: "smooth", block: "center" });
+});
 // Scroll into view recipe
 landingPage.recipeBtn.addEventListener("click", () => {
   landingPage.page2.scrollIntoView({ behavior: "smooth", block: "center" });
@@ -25,17 +31,7 @@ landingPage.locationBtn.addEventListener("click", () => {
   landingPage.page3.scrollIntoView({ behavior: "smooth", block: "center" });
 });
 
-// Create a onclick function to scroll up and below page2
-landingPage.scrollUp1.addEventListener("click", () => {
-  landingPage.page1.scrollIntoView({ behavior: "smooth", block: "center" });
-});
 // Scroll down to page 3 function
 landingPage.scrollDown1.addEventListener("click", () => {
   landingPage.page3.scrollIntoView({ behavior: "smooth", block: "center" });
-});
-
-// Create a onclick function to scroll up and below page3
-// Scroll up button to page 2
-landingPage.scrollUp2.addEventListener("click", () => {
-  landingPage.page2.scrollIntoView({ behavior: "smooth", block: "center" });
 });

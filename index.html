@@ -16,12 +16,12 @@
 
   <body>
     <header>
-      <a href="#" class="brand">Weems</a>
+      <a href="index.html" class="brand" id="home-btn">Weems</a>
       <div class="menu">
         <div class="btn">
           <i class="fas fa-times close-btn"></i>
         </div>
-        <a href="#">Home</a>
+        <a href="index.html">Home</a>
         <a href="./checklist/checklist.html">Puppy checklist</a>
         <a href="#">About</a>
         <a href="#">Blog</a>
@@ -68,9 +68,6 @@
     </div>
 
     <div class="page2">
-      <div class="scrollup-btn">
-        <button type="button" id="scrollUp">^</button>
-      </div>
       <div class="scrolldown-btn">
         <button type="button" id="scrollDown">^</button>
       </div>
@@ -126,7 +123,7 @@
           <!--Image slider start-->
           <div class="img-slider" data-aos="fade-up">
             <div class="slide active">
-              <img src="../CSS/pics/recipe-img.jpg" alt="" />
+              <img src="./CSS/pics/recipe-img.jpg" alt="" />
               <div class="info">
                 <h2>Chicken and rice</h2>
                 <p>
@@ -136,9 +133,9 @@
               </div>
             </div>
             <div class="slide">
-              <img src="../CSS/pics/bonebroth.jpg" alt="" />
+              <img src="./CSS/pics/bonebroth.jpg" alt="" />
               <div class="info">
-                <h2>1st ingredient: 2 chicken thights (boneless)</h2>
+                <h2>1st ingredient: Bone broth</h2>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -146,7 +143,7 @@
               </div>
             </div>
             <div class="slide">
-              <img src="../CSS/pics/cuttingChicken.jpg" alt="" />
+              <img src="./CSS/pics/cutting-chicken.jpg" alt="" />
               <div class="info">
                 <h2>Cut the chicken</h2>
                 <p>
@@ -156,7 +153,7 @@
               </div>
             </div>
             <div class="slide">
-              <img src="../CSS/pics/rice-img.jpg" alt="" />
+              <img src="./CSS/pics/rice-img.jpg" alt="" />
               <div class="info">
                 <h2>Second ingredient: Rice</h2>
                 <p>
@@ -166,7 +163,7 @@
               </div>
             </div>
             <div class="slide">
-              <img src="../CSS/pics/egg.jpg" alt="" />
+              <img src="./CSS/pics/egg.jpg" alt="" />
               <div class="info">
                 <h2>Slide 05</h2>
                 <p>
@@ -175,6 +172,7 @@
                 </p>
               </div>
             </div>
+
             <div class="navigation">
               <div class="btn active"></div>
               <div class="btn"></div>
@@ -188,34 +186,36 @@
     </div>
 
     <div class="page3">
-      <h1 class="main-direction-h1">Directions</h1>
-      <div class="scrollup-btn2">
-        <button type="button" id="scrollUp2">^</button>
-      </div>
+      <h1 class="main-direction-h1" data-aos="fade-down">Directions</h1>
       <div class="scrolldown-btn2">
         <button type="button" id="scrollDown2">^</button>
       </div>
       <div class="page3-outline">
         <div class="location-info-container">
-          <div class="directions">
-            <h1 class="directions-h1">Where to find us!</h1>
-            <p class="directions-p">
-              We are situated 1/4-mile North West of Portales, so if your GPS
-              tells you to go South or East of Portales, Please Call Us ASAP.
-              Try putting into your GPS, North avenue O and West Lime street.
-              Then go west on lime 1/2 mile and watch for our name on the mail
-              box with the number 1952. Our desire to have a web page results in
-              the necessity of helping our customers experience convience. With
-              the price of gasoline staying at the $2.00 + level, anything we
-              can do to save fuel is a plus. Because we are situated in Eastern
-              New Mexico and the largest city of any size is over 2 hours away,
-              we are trying to be creative in order to reach the folks that
-              desire to have a pet of high quality.
-            </p>
+          <div class="directions" data-aos="fade-down">
+            <h1 class="directions-h1">Where to find us</h1>
+            <div class="directions-p-container">
+              <p class="directions-p">
+                We are situated 1/4-mile North West of Portales, <br />
+                so if your GPS tells you to go South or East of Portales, Please
+                Call Us ASAP. <br />
+                Try putting into your GPS, North avenue O and West Lime street.
+                <br />
+                Then go west on lime 1/2 mile and watch for our name on the mail
+                box with the number 1952. <br />
+                Our desire to have a web page results in the necessity of
+                helping our customers experience convience. With the price of
+                gasoline staying at the $2.00 + level, anything we can do to
+                save fuel is a plus. Because we are situated in Eastern New
+                Mexico and the largest city of any size is over 2 hours away, we
+                are trying to be creative in order to reach the folks that
+                desire to have a pet of high quality.
+              </p>
+            </div>
           </div>
         </div>
         <div class="google-map-container">
-          <div class="mapouter">
+          <div class="mapouter" data-aos="fade-down">
             <div class="gmap_canvas">
               <iframe
                 width="500"
@@ -238,10 +238,11 @@
                   height: 60%;
                   width: 60%;
                   padding: 20px;
-                  background-color: white;
+                  background-color: rgb(11, 12, 24);
                 }
                 .mapouter:hover {
-                  box-shadow: 10px 10px 50px black;
+                  border-radius: 20px;
+                  box-shadow: 10px 10px 50px rgba(255, 255, 255, 0.562);
                 }</style
               ><a href="https://www.embedgooglemap.net"></a
               ><style>
@@ -257,9 +258,28 @@
         </div>
       </div>
     </div>
-    <script src="../JS/landingpage.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- Page 4: Gurantee/extra info -->
+    <div class="page4">
+      <!--Page 4 outline-->
+      <div class="page4-outline">
+        <!--Info container-->
+        <div class="info-container-1">
+          <div class="info-box-1">
+            <div class="info-box-1-header"></div>
+          </div>
+          <div class="info-box-2">
+            <div class="info-box-2-header"></div>
+          </div>
+          <div class="info-box-3">
+            <div class="info-box-3-header"></div>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="../JS/slider.js"></script>
+    <script src="./JS/landingpage.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
     <script src="./JS/navbar.js"></script>
     <script>
       AOS.init({
