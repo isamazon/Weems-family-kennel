@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +8,7 @@
 html {
   font-size: 10px;
   box-sizing: border-box;
-  font-family: "Oswald", sans-serif;
+  font-family: 'Oswald', sans-serif;
 }
 
 body {
@@ -54,7 +54,7 @@ body {
 }
 .secondh1 {
   width: 100%;
-  letter-spacing: 10px;
+  letter-spacing: 20px;
   padding: 0px 10px;
   animation: slideIn_left 1.5s ease;
 }
@@ -70,6 +70,12 @@ body {
   padding: 0px 10px;
   animation: slideIn_left 2.5s ease;
 }
+.fithh1 {
+  width: 100%;
+  letter-spacing: 10px;
+  padding: 0px 10px;
+  animation: slideIn_left 3s ease;
+}
 /*                  Buttons                  */
 .buttons-container {
   position: relative;
@@ -83,7 +89,8 @@ body {
   position: absolute;
   display: flex;
   flex-direction: row;
-  top: 40%;
+  right: 25%;
+  top: 45%;
   width: 100%;
   height: 50%;
 }
@@ -134,6 +141,7 @@ button {
   font-size: 18px;
   border-radius: 4px;
   transition: 0.6s;
+  outline: none;
   overflow: hidden;
   cursor: pointer;
 }
@@ -182,6 +190,7 @@ button {
   align-items: center;
   width: 100%;
   height: 5%;
+
   transform: rotate(180deg);
 }
 
@@ -437,6 +446,7 @@ button {
 .info-container-1 {
   position: relative;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   flex-direction: row;
@@ -452,17 +462,51 @@ button {
   height: 700px;
   width: 400px;
   background-color: #151c25;
-  margin: 0px 10px;
-  border: 2px solid rgb(4, 247, 255);
+  margin: 20px 10px;
+  border-radius: 20px;
 }
+
 .info-box-1-header,
 .info-box-2-header,
 .info-box-3-header {
   position: relative;
   display: flex;
-  height: 30%;
+  justify-content: center;
+  height: 40%;
   width: 100%;
+  border-radius: 20px;
   background-color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+.info-box-img-header-container {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+}
+.info-img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: #151c25;
+}
+
+.info-box-1-h1-container {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-self: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+}
+.info-h1 {
+  font-size: 25px;
+  letter-spacing: 5px;
+  color: white;
 }
 
 /*                  SCROLL BAR                   */
@@ -506,45 +550,6 @@ div::-webkit-scrollbar-thumb {
 div::-webkit-scrollbar-thumb:hover {
   background: rgb(0, 255, 255);
 }
-/*                  ANIMATIONS                   */
-@keyframes slideIn_right {
-  0% {
-    transform: translateX(-200px);
-    opacity: 0%;
-  }
-  100% {
-    opacity: 100%;
-    transform: translateX(0);
-  }
-}
-@keyframes slideIn_left {
-  0% {
-    transform: translateX(200px);
-    opacity: 0%;
-  }
-  100% {
-    opacity: 100%;
-    transform: translateX(0);
-  }
-}
-@keyframes fade_top {
-  0% {
-    transform: translateY(-150px);
-    opacity: 0%;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 100%;
-  }
-}
-@keyframes grow {
-  0% {
-    opacity: 0%;
-  }
-  100% {
-    opacity: 100%;
-  }
-}
 
 @media screen and (max-width: 1450px) {
   .buttons {
@@ -553,7 +558,7 @@ div::-webkit-scrollbar-thumb:hover {
 }
 @media screen and (max-width: 950px) {
   .page1 {
-    background: url("../CSS/pics/huskywallpaper1.jpg") no-repeat fixed center;
+    background: url('../CSS/pics/huskywallpaper1.jpg') no-repeat fixed center;
     background-size: cover;
   }
   .recipe-h1,
@@ -652,7 +657,48 @@ div::-webkit-scrollbar-thumb:hover {
     display: none;
   }
   .page1 {
-    background: url("../CSS/pics/huskywallpaper1.jpg") no-repeat fixed center;
+    background: url('../CSS/pics/huskywallpaper1.jpg') no-repeat fixed center;
     background-size: cover;
   }
+}
+/*                  ANIMATIONS                   */
+@keyframes slideIn_right {
+  0% {
+    transform: translateX(-200px);
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+    transform: translateX(0);
+  }
+}
+@keyframes slideIn_left {
+  0% {
+    transform: translateX(200px);
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+    transform: translateX(0);
+  }
+}
+@keyframes fade_top {
+  0% {
+    transform: translateY(-150px);
+    opacity: 0%;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 100%;
+  }
+}
+@keyframes grow {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@keyframes floatUP {
 }
