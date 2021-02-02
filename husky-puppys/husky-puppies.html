@@ -10,31 +10,214 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="../CSS/husky-puppies.css" />
-    <link rel="stylesheet" href="../CSS/navbar.css" />
     <title>Husky Puppies</title>
   </head>
   <body>
-    <header>
-      <a href="/index.html" class="brand" id="home-btn">Weems</a>
-      <div class="menu">
-        <div class="btn">
-          <i class="fas fa-times close-btn"></i>
+    <!--Nav Bar-->
+    <nav class="navbar navbar-expand-lg bg-light sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Weems</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Puppy checklist</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Recipe</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Our Dogs
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Husky Puppies</a></li>
+                <li><a class="dropdown-item" href="#">Our boys</a></li>
+                <li><a class="dropdown-item" href="#">Our girls</a></li>
+                <li><a class="dropdown-item" href="#">Dachshunds & Cockers Spaniels Puppies</a></li>
+              </ul>
+            </li>
+          </ul>
         </div>
-        <a href="index.html">Home</a>
-        <a href="./checklist/checklist.html">Puppy checklist</a>
-        <a href="#">Our girls</a>
-        <a href="#">Our boys</a>
-        <a href="#">Husky Puppies</a>
-        <a href="#">Adult adoption</a>
-        <a href="#">Dachshunds & Cockers Spaniels Puppies</a>
       </div>
-      <div class="btn">
-        <i class="fas fa-bars menu-btn"></i>
+    </nav>
+    <!--End of Nav Bar-->
+    <div class="container-fluid huskypuppies-page-container">
+      <div class="row py-5 px-4">
+        <div class="col-lg-8 col-md-12 col-custom-1 ">
+          <h1 class="display-1">Husky Puppies</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed facilisis libero. Nulla facilisi. Duis vitae vestibulum erat. Maecenas a venenatis erat. Fusce ornare erat id auctor fermentum. In volutpat dui est, at rutrum lectus facilisis quis. Sed viverra ligula a leo ullamcorper semper. Nunc facilisis interdum ipsum id vulputate. Maecenas ut erat quis justo egestas viverra vitae eu odio. Fusce ut imperdiet diam. Suspendisse ac sem tincidunt, interdum felis sed, auctor libero. Suspendisse et luctus nulla. Proin nec lacus eget nisi porta malesuada a in odio. Nullam pellentesque nibh at justo feugiat, at aliquet nisi mollis. Mauris ultrices libero ut diam suscipit vestibulum. Nulla non porta ligula, et tincidunt nunc.</p>
+        </div>
+        <div class="col-lg-4 col-md-12  col-custom-1">
+          <h1 class='display-2'>Sample of our puppies</h1>
+          <p class="overflow-auto custom-paragraph-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed facilisis libero. Nulla facilisi. Duis vitae vestibulum erat. Maecenas a venenatis erat. Fusce ornare erat id auctor fermentum. In volutpat dui est, at rutrum lectus facilisis quis. Sed viverra ligula a leo ullamcorper semper. Nunc facilisis interdum ipsum id vulputate. Maecenas ut erat quis justo egestas viverra vitae eu odio. Fusce ut imperdiet diam. Suspendisse ac sem tincidunt, interdum felis sed, auctor libero. Suspendisse et luctus nulla. Proin nec lacus eget nisi porta malesuada a in odio. Nullam pellentesque nibh at justo feugiat, at aliquet nisi mollis. Mauris ultrices libero ut diam suscipit vestibulum. Nulla non porta ligula, et tincidunt nunc.</p>
+        </div>
+
       </div>
-    </header>
-    <div class="container-fluid page-1-container">
-      <div class="row"></div>
     </div>
+    <div class="container-fluid husky-puppies-card-page-container">
+    <div class="container husky-puppies-card-page">
+      <div class="row py-5">
+        <div class="col-12 col-custom-1">
+          <h1 class="display-3">Available puppies</h1>
+        </div>
+      </div>
+      <div class="row py-5 justify-content-center">
+        <!--Puppy Card 1-->
+        <div class="col-xl-4 col-md-6 col-sm-12 product">
+          <div class="product-card">
+            <h2 class="name">Parents: Mia & Don</h2>
+            <span class="price">$550.00</span>
+            <a class="popup-btn">Quick View</a>
+            <img src="../CSS/pics/pup1.jpg" class="product-img" alt="">
+          </div>
+          <div class="popup-view">
+            <div class="popup-card">
+              <a><i class="fas fa-times close-card-btn">Close</i></a>
+              <div class="product-img">
+                <img src="../CSS/pics/pup1.jpg" alt="">
+              </div>
+              <div class="info">
+                <h2>Mia & Don's<br><span>Girl</span></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <span class="price">$550.00</span>
+                <a href="#" class="add-cart-btn">Add to Cart</a>
+                <a href="#" class="add-wish">Add to Wishlist</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Puppy card 2-->
+        <div class="col-xl-4 col-md-6 col-sm-12 product">
+          <div class="product-card">
+            <h2 class="name">Parents: Mia & Don</h2>
+            <span class="price">$500.00</span>
+            <a class="popup-btn">Quick View</a>
+            <img src="../CSS/pics/pup2.jpg" class="product-img" alt="">
+          </div>
+          <div class="popup-view">
+            <div class="popup-card">
+              <a><i class="fas fa-times close-card-btn">Close</i></a>
+              <div class="product-img">
+                <img src="../CSS/pics/pup2.jpg" alt="">
+              </div>
+              <div class="info">
+                <h2>Nike Shoe<br><span>Men's Sport</span></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <span class="price">$120.00</span>
+                <a href="#" class="add-cart-btn">Add to Cart</a>
+                <a href="#" class="add-wish">Add to Wishlist</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Puppy card 3-->
+        <div class="col-xl-4 col-md-6 col-sm-12 product">
+          <div class="product-card">
+            <h2 class="name">Parents: Mia & Don</h2>
+            <span class="price">$500.00</span>
+            <a class="popup-btn">Quick View</a>
+            <a><i class="fas fa-times close-card-btn">Close</i></a>
+            <div class="product-img">
+              <img src="../CSS/pics/pup3.jpg" alt="">
+            </div>
+          </div>
+          <div class="popup-view">
+            <div class="popup-card">
+              <a><i class="fas fa-times close-card-btn"></i></a>
+              <div class="product-img">
+                <img src="../CSS/pics/pup3.jpg" alt="">
+              </div>
+              <div class="info">
+                <h2>Nike Shoe<br><span>Men's Sport</span></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <span class="price">$120.00</span>
+                <a href="#" class="add-cart-btn">Add to Cart</a>
+                <a href="#" class="add-wish">Add to Wishlist</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Puppy card 4-->
+        <div class="col-xl-4 col-md-6 col-sm-12 product">
+          <div class="product-card">
+            <h2 class="name">Parents: Mia & Don</h2>
+            <span class="price">$500.00</span>
+            <a class="popup-btn">Quick View</a>
+            <img src="../CSS/pics/pup4.jpg" class="product-img" alt="">
+          </div>
+          <div class="popup-view">
+            <div class="popup-card">
+              <a><i class="fas fa-times close-card-btn">Close</i></a>
+              <div class="product-img">
+                <img src="../CSS/pics/pup4.jpg" alt="">
+              </div>
+              <div class="info">
+                <h2>Nike Shoe<br><span>Men's Sport</span></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <span class="price">$120.00</span>
+                <a href="#" class="add-cart-btn">Add to Cart</a>
+                <a href="#" class="add-wish">Add to Wishlist</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Puppy card 5-->
+        <div class="col-xl-4 col-md-6 col-sm-12 product">
+          <div class="product-card">
+            <h2 class="name">Parents: Mia & Don</h2>
+            <span class="price">$500.00</span>
+            <a class="popup-btn">Quick View</a>
+            <img src="../CSS/pics/pup5.jpg" class="product-img" alt="">
+          </div>
+          <div class="popup-view">
+            <div class="popup-card">
+              <a><i class="fas fa-times close-card-btn">Close</i></a>
+              <div class="product-img">
+                <img src="../CSS/pics/pup5.jpg" alt="">
+              </div>
+              <div class="info">
+                <h2>Nike Shoe<br><span>Men's Sport</span></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <span class="price">$120.00</span>
+                <a href="#" class="add-cart-btn">Add to Cart</a>
+                <a href="#" class="add-wish">Add to Wishlist</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Puppy card 6-->
+        <div class="col-xl-4 col-md-6 col-sm-12 product">
+          <div class="product-card">
+            <h2 class="name">Parents: Mia & Don</h2>
+            <span class="price">$500.00</span>
+            <a class="popup-btn">Quick View</a>
+            <img src="../CSS/pics/pup6.jpg" class="product-img" alt="">
+          </div>
+          <div class="popup-view">
+            <div class="popup-card">
+              <a><i class="fas fa-times close-card-btn">Close</i></a>
+              <div class="product-img">
+                <img src="../CSS/pics/pup6.jpg" alt="">
+              </div>
+              <div class="info">
+                <h2>Nike Shoe<br><span>Men's Sport</span></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <span class="price">$120.00</span>
+                <a href="#" class="add-cart-btn">Add to Cart</a>
+                <a href="#" class="add-wish">Add to Wishlist</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
     <!--JS sources-->
     <script
@@ -42,5 +225,6 @@
       integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
       crossorigin="anonymous"
     ></script>
+    <script src="../JS/productCard.js"></script>
   </body>
 </html>
