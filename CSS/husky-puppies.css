@@ -1,43 +1,3 @@
-/*NAVBAR*/
-nav .navbar-custom-color {
-  background-color: red;
-}
-
-nav .navbar-brand {
-  color: black;
-  margin: 0px 20px;
-  letter-spacing: 4px;
-}
-
-nav .nav-link {
-  color: black;
-  margin: 0px 50px;
-}
-
-nav .nav-link:hover {
-  color: white;
-  background-color: black;
-  border-radius: 20px;
-  -webkit-transition-duration: 0.5s;
-          transition-duration: 0.5s;
-}
-
-nav .dropdown-item {
-  letter-spacing: 4px;
-}
-
-nav .dropdown-item:hover {
-  color: white;
-  background-color: black;
-  border-radius: 20px;
-  -webkit-transition-duration: 0.5s;
-          transition-duration: 0.5s;
-}
-
-nav .navbar-toggler-icon {
-  color: black;
-}
-
 /*HUSKY PUPPY LANDING PAGE*/
 .husky-puppies-card-page-container {
   background-color: #151c25;
@@ -167,7 +127,7 @@ nav .navbar-toggler-icon {
           transition-duration: 1s;
 }
 
-/*Styles for popup view*/
+/*          POP-UP VIEW           */
 .product .popup-view {
   z-index: 2;
   background: rgba(255, 255, 255, 0.5);

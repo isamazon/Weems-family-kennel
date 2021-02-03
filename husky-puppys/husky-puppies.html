@@ -9,7 +9,10 @@
       integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="/CSS/navbar.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="../CSS/husky-puppies.css" />
+  
     <title>Husky Puppies</title>
   </head>
   <body>
@@ -48,12 +51,12 @@
     </nav>
     <!--End of Nav Bar-->
     <div class="container-fluid huskypuppies-page-container">
-      <div class="row py-5 px-4">
-        <div class="col-lg-8 col-md-12 col-custom-1 ">
+      <div class="row py-5">
+        <div class="col-lg-7 col-md-12 col-custom-1 ">
           <h1 class="display-1">Husky Puppies</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed facilisis libero. Nulla facilisi. Duis vitae vestibulum erat. Maecenas a venenatis erat. Fusce ornare erat id auctor fermentum. In volutpat dui est, at rutrum lectus facilisis quis. Sed viverra ligula a leo ullamcorper semper. Nunc facilisis interdum ipsum id vulputate. Maecenas ut erat quis justo egestas viverra vitae eu odio. Fusce ut imperdiet diam. Suspendisse ac sem tincidunt, interdum felis sed, auctor libero. Suspendisse et luctus nulla. Proin nec lacus eget nisi porta malesuada a in odio. Nullam pellentesque nibh at justo feugiat, at aliquet nisi mollis. Mauris ultrices libero ut diam suscipit vestibulum. Nulla non porta ligula, et tincidunt nunc.</p>
         </div>
-        <div class="col-lg-4 col-md-12  col-custom-1">
+        <div class="col-lg-4 col-md-12 col-custom-1" data-aos="fade-down">
           <h1 class='display-2'>Sample of our puppies</h1>
           <p class="overflow-auto custom-paragraph-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed facilisis libero. Nulla facilisi. Duis vitae vestibulum erat. Maecenas a venenatis erat. Fusce ornare erat id auctor fermentum. In volutpat dui est, at rutrum lectus facilisis quis. Sed viverra ligula a leo ullamcorper semper. Nunc facilisis interdum ipsum id vulputate. Maecenas ut erat quis justo egestas viverra vitae eu odio. Fusce ut imperdiet diam. Suspendisse ac sem tincidunt, interdum felis sed, auctor libero. Suspendisse et luctus nulla. Proin nec lacus eget nisi porta malesuada a in odio. Nullam pellentesque nibh at justo feugiat, at aliquet nisi mollis. Mauris ultrices libero ut diam suscipit vestibulum. Nulla non porta ligula, et tincidunt nunc.</p>
         </div>
@@ -69,18 +72,18 @@
       </div>
       <div class="row py-5 justify-content-center">
         <!--Puppy Card 1-->
-        <div class="col-xl-4 col-md-6 col-sm-12 product">
-          <div class="product-card">
+        <div class="col-xl-4 col-md-6 col-sm-12 product" >
+          <div class="product-card" data-aos="flip-left">
             <h2 class="name">Parents: Mia & Don</h2>
             <span class="price">$550.00</span>
             <a class="popup-btn">Quick View</a>
-            <img src="../CSS/pics/pup1.jpg" class="product-img" alt="">
+            <img src="../CSS/pics/pup1.jpg" class="product-img" id="girlImage" alt="">
           </div>
           <div class="popup-view">
-            <div class="popup-card">
+            <div class="popup-card" >
               <a><i class="fas fa-times close-card-btn">Close</i></a>
               <div class="product-img">
-                <img src="../CSS/pics/pup1.jpg" alt="">
+                <img src="../CSS/pics/pup1.jpg" id="girlImage" alt="">
               </div>
               <div class="info">
                 <h2>Mia & Don's<br><span>Girl</span></h2>
@@ -94,20 +97,20 @@
         </div>
         <!--Puppy card 2-->
         <div class="col-xl-4 col-md-6 col-sm-12 product">
-          <div class="product-card">
+          <div class="product-card" data-aos="flip-left">
             <h2 class="name">Parents: Mia & Don</h2>
             <span class="price">$500.00</span>
             <a class="popup-btn">Quick View</a>
-            <img src="../CSS/pics/pup2.jpg" class="product-img" alt="">
+            <img src="../CSS/pics/pup2.jpg" class="product-img" id="boyImage" alt="">
           </div>
           <div class="popup-view">
             <div class="popup-card">
               <a><i class="fas fa-times close-card-btn">Close</i></a>
               <div class="product-img">
-                <img src="../CSS/pics/pup2.jpg" alt="">
+                <img src="../CSS/pics/pup2.jpg" id="BoyImage" alt="">
               </div>
               <div class="info">
-                <h2>Nike Shoe<br><span>Men's Sport</span></h2>
+                <h2>Mia & Don's<br><span>boy</span></h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 <span class="price">$120.00</span>
                 <a href="#" class="add-cart-btn">Add to Cart</a>
@@ -117,26 +120,26 @@
           </div>
         </div>
         <!--Puppy card 3-->
-        <div class="col-xl-4 col-md-6 col-sm-12 product">
-          <div class="product-card">
+        <div class="col-xl-4 col-md-6 col-sm-12 product" >
+          <div class="product-card" data-aos="flip-left">
             <h2 class="name">Parents: Mia & Don</h2>
             <span class="price">$500.00</span>
             <a class="popup-btn">Quick View</a>
             <a><i class="fas fa-times close-card-btn">Close</i></a>
             <div class="product-img">
-              <img src="../CSS/pics/pup3.jpg" alt="">
+              <img src="../CSS/pics/pup3.jpg" id="boyImage" alt="">
             </div>
           </div>
           <div class="popup-view">
             <div class="popup-card">
-              <a><i class="fas fa-times close-card-btn"></i></a>
+              <a><i class="fas fa-times close-card-btn">Close</i></a>
               <div class="product-img">
-                <img src="../CSS/pics/pup3.jpg" alt="">
+                <img src="../CSS/pics/pup3.jpg" id="boyImage" alt="">
               </div>
               <div class="info">
-                <h2>Nike Shoe<br><span>Men's Sport</span></h2>
+                <h2>Mia & Don's<br><span>Men's Sport</span></h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <span class="price">$120.00</span>
+                <span class="price">$500.00</span>
                 <a href="#" class="add-cart-btn">Add to Cart</a>
                 <a href="#" class="add-wish">Add to Wishlist</a>
               </div>
@@ -145,20 +148,20 @@
         </div>
         <!--Puppy card 4-->
         <div class="col-xl-4 col-md-6 col-sm-12 product">
-          <div class="product-card">
+          <div class="product-card" data-aos="flip-right">
             <h2 class="name">Parents: Mia & Don</h2>
             <span class="price">$500.00</span>
             <a class="popup-btn">Quick View</a>
-            <img src="../CSS/pics/pup4.jpg" class="product-img" alt="">
+            <img src="../CSS/pics/pup4.jpg" class="product-img" id="girlImage" alt="">
           </div>
           <div class="popup-view">
             <div class="popup-card">
               <a><i class="fas fa-times close-card-btn">Close</i></a>
               <div class="product-img">
-                <img src="../CSS/pics/pup4.jpg" alt="">
+                <img src="../CSS/pics/pup4.jpg" id="girlImage" alt="">
               </div>
               <div class="info">
-                <h2>Nike Shoe<br><span>Men's Sport</span></h2>
+                <h2>Mia & Don's<br><span>Men's Sport</span></h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 <span class="price">$120.00</span>
                 <a href="#" class="add-cart-btn">Add to Cart</a>
@@ -169,20 +172,20 @@
         </div>
         <!--Puppy card 5-->
         <div class="col-xl-4 col-md-6 col-sm-12 product">
-          <div class="product-card">
+          <div class="product-card" data-aos="flip-right">
             <h2 class="name">Parents: Mia & Don</h2>
             <span class="price">$500.00</span>
             <a class="popup-btn">Quick View</a>
-            <img src="../CSS/pics/pup5.jpg" class="product-img" alt="">
+            <img src="../CSS/pics/pup5.jpg" class="product-img" id="boyImage" alt="">
           </div>
           <div class="popup-view">
             <div class="popup-card">
               <a><i class="fas fa-times close-card-btn">Close</i></a>
               <div class="product-img">
-                <img src="../CSS/pics/pup5.jpg" alt="">
+                <img src="../CSS/pics/pup5.jpg" id="boyImage" alt="">
               </div>
               <div class="info">
-                <h2>Nike Shoe<br><span>Men's Sport</span></h2>
+                <h2>Mia & Don's<br><span>Men's Sport</span></h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 <span class="price">$120.00</span>
                 <a href="#" class="add-cart-btn">Add to Cart</a>
@@ -193,7 +196,7 @@
         </div>
         <!--Puppy card 6-->
         <div class="col-xl-4 col-md-6 col-sm-12 product">
-          <div class="product-card">
+          <div class="product-card" data-aos="flip-right">
             <h2 class="name">Parents: Mia & Don</h2>
             <span class="price">$500.00</span>
             <a class="popup-btn">Quick View</a>
@@ -206,7 +209,7 @@
                 <img src="../CSS/pics/pup6.jpg" alt="">
               </div>
               <div class="info">
-                <h2>Nike Shoe<br><span>Men's Sport</span></h2>
+                <h2>Mia & Don's<br><span>Men's Sport</span></h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 <span class="price">$120.00</span>
                 <a href="#" class="add-cart-btn">Add to Cart</a>
@@ -226,5 +229,12 @@
       crossorigin="anonymous"
     ></script>
     <script src="../JS/productCard.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 200,
+        duration: 1000,
+      });
+    </script>
   </body>
 </html>

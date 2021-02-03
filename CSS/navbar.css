@@ -1,131 +1,40 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+nav .navbar-custom-color {
+  background-color: red;
 }
 
-body {
-  min-height: 100vh;
-}
-
-.section-main {
-  position: relative;
-  width: 100%;
-  min-height: 100vh;
-  background: url(./pics/huskywallpaper1.jpg) no-repeat;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px 100px;
-}
-
-.section-main h1 {
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 60px;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  line-height: 80px;
-}
-
-header {
-  z-index: 999;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 100px;
-  transition: 0.6s;
-  background-color: rgba(0, 0, 0, 0.596);
-}
-
-header.sticky {
-  background: #000000;
-  padding: 15px 100px;
-}
-
-header .brand {
-  color: #fff;
-  font-size: 30px;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-decoration: none;
+nav .navbar-brand {
+  color: black;
+  margin: 0px 20px;
   letter-spacing: 2px;
 }
 
-header .menu {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+nav .nav-link {
+  color: black;
+  margin: 0px 50px;
 }
 
-header .menu a {
-  color: #fff;
-  font-size: 16px;
-  font-weight: 500;
-  text-decoration: none;
-  margin: 0 30px;
-  padding: 0 10px;
+nav .nav-link:hover {
+  color: white;
+  background-color: black;
   border-radius: 20px;
-  transition: 0.3s;
-  transition-property: color, background;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
 }
 
-header .menu a:hover {
-  color: #000;
-  background: #fff;
+nav .dropdown-item {
+  letter-spacing: 2px;
 }
 
-header .btn {
-  color: #fff;
-  font-size: 25px;
-  cursor: pointer;
-  display: none;
+nav .dropdown-item:hover {
+  color: white;
+  background-color: black;
+  border-radius: 20px;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
 }
 
-@media (max-width: 1060px) {
-  header .btn {
-    display: block;
-  }
-
-  header .menu {
-    position: fixed;
-    background: #000000;
-    flex-direction: column;
-    min-width: 400px;
-    height: 100vh;
-    top: 0;
-    right: -100%;
-    padding: 80px 50px;
-    transition: 0.5s;
-    transition-property: right;
-  }
-
-  header .menu.active1 {
-    right: 0;
-    width: 100%;
-  }
-
-  header .menu .close-btn {
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin: 25px;
-  }
-
-  header .menu a {
-    display: block;
-    font-size: 20px;
-    margin: 20px;
-    padding: 0 15px;
-  }
+nav .navbar-toggler-icon {
+  color: black;
+  letter-spacing: 2px;
 }
+/*# sourceMappingURL=navbar.css.map */

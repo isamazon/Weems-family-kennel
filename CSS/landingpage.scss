@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+ .page1 {
+    height: 100vh;
+    background: url(/CSS/pics/huskywallpaper1.jpg);
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .first-custom-row {
+        display: flex;
+        background: green;
+    }
+
+    .first-custom-column {
+        background: blue;
+        border: 1px solid red;
+    }
+ }
+
+
+
+  #videoBG {
+    position: fixed;
+    height: auto;
+    width: 100%;
+  }
+
+
+
+
+
+  @media screen and (max-width: 950px) {
+    .page1 {
+      background: url('../CSS/pics/huskywallpaper1.jpg') no-repeat fixed center;
+      background-size: cover;
+    }
+    .recipe-h1,
+    .recipe-second-h1 {
+      font-size: 3rem;
+    }
+  }

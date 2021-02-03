@@ -1,0 +1,35 @@
+$letterSpacing1: 2px;
+
+nav {
+    .navbar-custom-color {
+        background-color: red;
+    }
+    .navbar-brand {
+        color: black;
+        margin: 0px 20px;
+        letter-spacing: $letterSpacing1;
+    }
+    .nav-link {
+        color: black;
+        margin: 0px 50px;
+        &:hover{
+            color: white;
+            background-color: black;
+            border-radius: 20px ;
+            transition-duration: 0.5s;
+        }
+    }
+    .dropdown-item{
+        letter-spacing: $letterSpacing1;
+        &:hover {color: white;
+        background-color: black;
+        border-radius: 20px ;
+        transition-duration: 0.5s;
+        }
+    }
+    .navbar-toggler-icon {
+        color: black;
+        letter-spacing: 2px;
+    }
+}
+
