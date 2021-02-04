@@ -1,32 +1,102 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@300&display=swap');
+
+/*LETTER SPACING VARIABLES*/
+$letterSpacing1: 15px;
+$letterSpacing2: 2px;
+/*HOVER COLORS*/
+$BgWhite: white;
+$Bgblack: black;
+$ColorBlack: black;
+$ColorWhite: white;
 
  .page1 {
     height: 100vh;
     background: url(/CSS/pics/huskywallpaper1.jpg);
     /* Create the parallax scrolling effect */
+    
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 
     .first-custom-row {
-        display: flex;
-        background: green;
+        padding: 0px 0px 0px 0px;
+        height: 70vh;
+        background: rgba(255, 0, 0, 0.541);
+
+        .first-custom-column {
+            background: rgba(0, 0, 255, 0.466);
+
+            .first-column-h1 {
+                letter-spacing: 50px;
+                font-size: 5.5rem;
+                line-height: 150px;
+                color: $ColorWhite;
+                text-align: center;
+                font-family: 'Big Shoulders Display', cursive;
+            }
+        }
+        .second-custom-column {
+            background-color: rgba(0, 128, 0, 0.432);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
+    
+            .btn {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 20px 0px;
+                margin: 5px 0px;
+                letter-spacing: 5px;
+                background: none;
+                border: 1px solid  $ColorWhite;
+                color: $ColorWhite;
+                width: 100%;
+                height: 100px;
+                &:hover{
+                    background-color: $BgWhite;
+                    color: $ColorBlack;
+                   
+                }
+            }
+            @media screen and (max-width: 990px) {
+                .second-custom-column {
+                    background-color: red;
+                    flex-direction: row;
+                }
+            }
+        }    
+
     }
+    
 
-    .first-custom-column {
-        background: blue;
-        border: 1px solid red;
+
+
+
+    
+}
+
+
+
+  .page2-container {
+      height: 100%;
+      background: $ColorBlack;
+    
+    .page2 {
+        background:$ColorWhite;
+        height: 100vh;
+
+        .card-container {
+            background-color: cadetblue;
+            height: 50vh;
+        }
     }
- }
+  } 
 
 
-
-  #videoBG {
-    position: fixed;
-    height: auto;
-    width: 100%;
-  }
 
 
 
@@ -41,4 +111,27 @@
     .recipe-second-h1 {
       font-size: 3rem;
     }
+  }
+
+
+/*                  SCROLL BAR                   */
+/* width */
+body::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  /* Track */
+  body::-webkit-scrollbar-track {
+    background: #000000;
+  }
+  
+  /* Handle */
+  body::-webkit-scrollbar-thumb {
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  body::-webkit-scrollbar-thumb:hover {
+    background: rgb(0, 255, 255);
   }

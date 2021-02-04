@@ -6,30 +6,35 @@ nav {
     }
     .navbar-brand {
         color: black;
+        font-size: 2rem;
         margin: 0px 20px;
         letter-spacing: $letterSpacing1;
     }
     .nav-link {
+        justify-content: center;
         color: black;
         margin: 0px 50px;
         &:hover{
-            color: white;
-            background-color: black;
-            border-radius: 20px ;
-            transition-duration: 0.5s;
+        text-shadow: 0px 2px 0px black;
+        
         }
     }
     .dropdown-item{
         letter-spacing: $letterSpacing1;
         &:hover {color: white;
         background-color: black;
-        border-radius: 20px ;
+        border-radius: 20px;
         transition-duration: 0.5s;
         }
     }
     .navbar-toggler-icon {
+        font-size: 3rem;
         color: black;
-        letter-spacing: 2px;
+        padding: 0px 0px;
+        outline: none;
+    }
+    button {
+        color: rgba(255, 255, 255, 0);
     }
 }
 

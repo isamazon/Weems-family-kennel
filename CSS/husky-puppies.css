@@ -29,18 +29,17 @@
 .husky-puppies-card-page {
   height: 100%;
   background: #151c25;
+  /*Styles for product card*/
 }
 
-.col-custom-2 {
+.husky-puppies-card-page .col-custom-2 {
   background-color: cyan;
   border: 2px solid black;
   color: black;
   text-align: center;
 }
 
-/*                      PRODUCT CARDS                     */
-/*Styles for product card*/
-.product .product-card {
+.husky-puppies-card-page .product .product-card {
   z-index: 1;
   background: #1D212B;
   position: relative;
@@ -50,14 +49,14 @@
   border-radius: 10px;
 }
 
-.product-card:hover {
+.husky-puppies-card-page .product .product-card:hover {
   -webkit-transition-duration: 1s;
           transition-duration: 1s;
   -webkit-box-shadow: 0px 0px 20px black;
           box-shadow: 0px 0px 20px black;
 }
 
-.product .product-card:before {
+.husky-puppies-card-page .product .product-card:after {
   content: '';
   background: rgba(255, 255, 255, 0.1);
   position: absolute;
@@ -70,9 +69,10 @@
   border-bottom-left-radius: 10px;
 }
 
-.product .product-card .product-img {
+.husky-puppies-card-page .product .product-card .product-img {
   z-index: 1;
   position: absolute;
+  background-color: green;
   max-width: 350px;
   top: 30%;
   left: 50%;
@@ -80,7 +80,7 @@
           transform: translate(-50%, -50%);
 }
 
-.product .product-card .name {
+.husky-puppies-card-page .product .product-card .name {
   z-index: 2;
   color: #fff;
   position: absolute;
@@ -91,7 +91,7 @@
   letter-spacing: 1px;
 }
 
-.product .product-card .price {
+.husky-puppies-card-page .product .product-card .price {
   z-index: 2;
   color: #fff;
   position: absolute;
@@ -102,7 +102,7 @@
   font-weight: 300;
 }
 
-.product .product-card .popup-btn {
+.husky-puppies-card-page .product .product-card .popup-btn {
   z-index: 2;
   color: #fff;
   background: #555;
@@ -120,15 +120,14 @@
   cursor: pointer;
 }
 
-.product .product-card .popup-btn:hover {
+.husky-puppies-card-page .product .product-card .popup-btn:hover {
   color: white;
   background: black;
   -webkit-transition-duration: 1s;
           transition-duration: 1s;
 }
 
-/*          POP-UP VIEW           */
-.product .popup-view {
+.husky-puppies-card-page .product .popup-view {
   z-index: 2;
   background: rgba(255, 255, 255, 0.5);
   position: fixed;
@@ -151,12 +150,12 @@
   transition: 1.5s;
 }
 
-.product .popup-view.active {
+.husky-puppies-card-page .product .popup-view.active {
   opacity: 1;
   visibility: visible;
 }
 
-.product .popup-card {
+.husky-puppies-card-page .product .popup-card {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -166,9 +165,8 @@
   margin: 20px;
 }
 
-.product .popup-card .product-img {
+.husky-puppies-card-page .product .popup-card .product-img {
   z-index: 2;
-  background: #1D212B;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -187,7 +185,7 @@
   border-bottom-left-radius: 10px;
 }
 
-.product .popup-card .product-img img {
+.husky-puppies-card-page .product .popup-card .product-img img {
   z-index: 2;
   position: relative;
   width: 450px;
@@ -195,7 +193,7 @@
   left: -50px;
 }
 
-.product .popup-card .info {
+.husky-puppies-card-page .product .popup-card .info {
   z-index: 2;
   background: #fff;
   display: -webkit-box;
@@ -213,7 +211,7 @@
   border-radius: 10px;
 }
 
-.product .popup-card .close-card-btn {
+.husky-puppies-card-page .product .popup-card .close-card-btn {
   color: red;
   font-size: 200px;
   z-index: 3;
@@ -224,6 +222,7 @@
   cursor: pointer;
 }
 
+/*          POP-UP VIEW           */
 .product .popup-card .info h2 {
   font-size: 40px;
   line-height: 20px;

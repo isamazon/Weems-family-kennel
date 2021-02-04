@@ -4,21 +4,21 @@ nav .navbar-custom-color {
 
 nav .navbar-brand {
   color: black;
+  font-size: 2rem;
   margin: 0px 20px;
   letter-spacing: 2px;
 }
 
 nav .nav-link {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: black;
   margin: 0px 50px;
 }
 
 nav .nav-link:hover {
-  color: white;
-  background-color: black;
-  border-radius: 20px;
-  -webkit-transition-duration: 0.5s;
-          transition-duration: 0.5s;
+  text-shadow: 0px 2px 0px black;
 }
 
 nav .dropdown-item {
@@ -34,7 +34,13 @@ nav .dropdown-item:hover {
 }
 
 nav .navbar-toggler-icon {
+  font-size: 3rem;
   color: black;
-  letter-spacing: 2px;
+  padding: 0px 0px;
+  outline: none;
+}
+
+nav button {
+  color: rgba(255, 255, 255, 0);
 }
 /*# sourceMappingURL=navbar.css.map */

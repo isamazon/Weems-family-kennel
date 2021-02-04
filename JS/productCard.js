@@ -23,18 +23,21 @@ var popupViews = document.querySelectorAll('.popup-view');
     });
 
     //Java-script for changing the background depending on if the image is a girl or boy 
-    // First we want to add object that contain a boy or girl variant inside the img id
-
-    let girl = document.getElementById('girlImage');
-    let boy = document.getElemenyById('boyImage');
+    // add vars a boy or girl variant inside the img id
+    let girl = document.querySelector('.girlImage');
+    let boy = document.querySelector('.boyImage');
       // Add a background var
-    let gBackground = document.querySelector('.product-img')
+    let gBackground = document.querySelector('.product-img');
+    let viewPuppyBtn = document.querySelector('.popup-btn');
+
+    viewPuppyBtn.addEventListener('click', () => {
+      console.log('clickly click');
+    })
+    if (gBackground.classList.contains(boy)) {
+      console.log('it does')
+    } else if (gBackground.classList.contains(girl)) {
+      console.log('it also does')
+    }
     
 
     //Create a for each loop for the girl and boy object, changing the background style varying on the gender  
-    function changeBackground() {
-      for (i = 0; i <= boy.length; i++) {
-        genderBackground.gBackground.style.backgroundColor = 'blue';
-      }
-    }
-    changeBackground();
